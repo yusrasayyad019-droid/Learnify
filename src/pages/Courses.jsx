@@ -44,7 +44,7 @@ const Courses = () => {
 ]
   return (
     <div>
-      <div className="bg-amber-50 min-h-screen flex flex-col items-center">
+      <div className="bg-amber-50 min-h-screen flex flex-col items-center ">
       <div className="text-center mt-10 px-5">
         <h1 className="text-5xl md:text-7xl font-bold text-slate-700">
           Explore Our, <span className="text-blue-400">Courses</span>
@@ -56,7 +56,7 @@ const Courses = () => {
         </p>
         </div>
         
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-100 ml-10 -mt-110">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-15  mb-100 ml-10 -mt-110 ">
 {mapping.map((elem,index)=>
 <Coursecard
 key={index}
