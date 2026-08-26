@@ -3,7 +3,7 @@ import React from 'react'
 const Contactl = () => {
   return (
     <div >
-        <div className='bg-amber-50 rounded-2xl flex flex-wrap ml-20 shadow-2xl h-100 w-100  border-4  md:-mt-350'>
+        <div className='sm:bg-amber-50 rounded-2xl flex flex-wrap ml-20 shadow-2xl h-60 w-60  border-4 -mt-350  md : h-100 w-100'>
             <div className='text-4xl text-slate-700  font-serif  font-bold ml-3 mt-5'>
                 Get In Touch
             </div>

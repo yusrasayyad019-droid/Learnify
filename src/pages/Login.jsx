@@ -39,7 +39,7 @@ Continue your learning journey
       <div>
         <form onSubmit={handleSubmit}>
           
-        <div className='md:rounded-2xl flex flex-wrap shadow-2xl h-150 w-120  mb-500 border-4 bg-amber-50  md:ml-90 '>
+        <div className='md:rounded-2xl flex flex-wrap shadow-2xl h-150 w-120  mb-500 border-4 bg-amber-50  md:ml-90  sm: h-100 w-90 '>
           
 
           <div className='text-4xl text-slate-700 font-serif font-bold ml-3 mt-5'>

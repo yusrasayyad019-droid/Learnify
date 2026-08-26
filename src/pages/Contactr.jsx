@@ -30,7 +30,7 @@ console.log("Saved Successfully!")
     <div>
       <form onSubmit={handleSubmit}>
     
-        <div className='rounded-2xl flex flex-wrap ml-20 shadow-2xl h-250 w-120 mb-500 border-4 bg-amber-50'>
+        <div className='sm: rounded-2xl flex flex-wrap ml-20 shadow-2xl h-200 w-100 mb-500 border-4 bg-amber-50 md : h-250 w-120'>
 
           <div className='text-4xl text-slate-700 font-serif font-bold ml-3 mt-5'>
 
