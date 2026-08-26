@@ -10,8 +10,8 @@ const Coursecard = (props) => {
 
   return (
     <div>
-         <div className="bg-white rounded-3xl shadow-xl hover:-translate-y-2 hover:shadow-3xl transition-all duration-300 p-6 text-blue-950">
-           <h2 className="text-2xl font-bold text-center mt-2 ml-4 mb-40">
+         <div className="bg-white rounded-3xl shadow-xl hover:-translate-y-2 hover:shadow-3xl transition-all duration-300 p-6 text-blue-950 sm: -ml-18">
+           <h2 className="text-2xl font-bold text-center mt-2  mb-40">
          {props.name}
       </h2>
 
