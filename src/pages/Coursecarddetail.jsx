@@ -1,10 +1,10 @@
 import React from "react";
 
 const Coursecarddetail = () => {
+
   return (
     <div className="min-h-screen bg-amber-50 py-12 px-5">
-      
-      
+
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-6xl font-bold text-slate-700">
           Explore Our <span className="text-blue-400">Courses</span>
@@ -15,11 +15,9 @@ const Coursecarddetail = () => {
         </p>
       </div>
 
-      
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
 
-      
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             💻 Web Development
           </h2>
@@ -49,9 +47,7 @@ const Coursecarddetail = () => {
           </ul>
         </div>
 
-
-        
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             ⚛️ React JS
           </h2>
@@ -81,9 +77,7 @@ const Coursecarddetail = () => {
           </ul>
         </div>
 
-
-      
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             🟢 Node JS
           </h2>
@@ -112,9 +106,7 @@ const Coursecarddetail = () => {
           </ul>
         </div>
 
-
-      
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             🌿 MongoDB
           </h2>
@@ -144,9 +136,7 @@ const Coursecarddetail = () => {
           </ul>
         </div>
 
-
-        
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             🐍 Python Programming
           </h2>
@@ -176,9 +166,7 @@ const Coursecarddetail = () => {
           </ul>
         </div>
 
-
-        
-        <div className="bg-white p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300">
           <h2 className="text-3xl font-bold text-slate-700">
             🎨 UI/UX Design
           </h2>
@@ -209,8 +197,9 @@ const Coursecarddetail = () => {
         </div>
 
       </div>
-    </div>
-  );
-};
 
-export default Coursecarddetail;
+    </div>
+  )
+}
+
+export default Coursecarddetail
