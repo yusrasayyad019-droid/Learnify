@@ -1,105 +1,108 @@
 import React, { useState } from 'react'
 
 const Contactr = () => {
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log(name);
-    console.log(email);
-    console.log(subject);
-    console.log(message);
+  const handleSubmit = (e) => {
+    e.preventDefault()
 
-    const contactData={
+    console.log(name)
+    console.log(email)
+    console.log(subject)
+    console.log(message)
+
+    const contactData = {
       name,
       email,
       subject,
       message,
-
     }
-    
-  
-localStorage.setItem("contactData",JSON.stringify(contactData));
-console.log("Saved Successfully!")
+
+    localStorage.setItem("contactData", JSON.stringify(contactData))
+
+    console.log("Saved Successfully!")
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-    
-        <div className='sm: rounded-2xl flex flex-wrap ml-20 shadow-2xl h-200 w-100 mb-500 border-4 bg-amber-50 md : h-250 w-120'>
+    <div className="min-h-screen px-4 py-10">
 
-          <div className='text-4xl text-slate-700 font-serif font-bold ml-3 mt-5'>
+      <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
 
-            Full Name
+        <div className="rounded-2xl shadow-2xl border-4 bg-amber-50 p-5 sm:p-8">
+
+          <div className="text-2xl sm:text-3xl md:text-4xl text-slate-700 font-serif font-bold">
+
+            <label className="block mb-2">
+              Full Name
+            </label>
 
             <textarea
-              placeholder='Write Your Name...'
+              placeholder="Write Your Name..."
               rows="2"
               value={name}
-              onChange={(e)=>{
+              onChange={(e) => {
                 setName(e.target.value)
               }}
-              className='w-full border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500'
+              className="w-full text-base sm:text-lg font-sans font-normal border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
             />
 
-            <br />
-
-            Email
+            <label className="block mt-5 mb-2">
+              Email
+            </label>
 
             <textarea
-              placeholder='Write Your Email...'
+              placeholder="Write Your Email..."
               rows="1"
               value={email}
-              onChange={(e)=>{
+              onChange={(e) => {
                 setEmail(e.target.value)
               }}
-              
-              className='w-full border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500'
+              className="w-full text-base sm:text-lg font-sans font-normal border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
             />
 
-            <br />
-            <br />
-
-            Subject
+            <label className="block mt-5 mb-2">
+              Subject
+            </label>
 
             <textarea
-              placeholder='Write Your Subject...'
+              placeholder="Write Your Subject..."
               rows="2"
               value={subject}
-           
               onChange={(e) => setSubject(e.target.value)}
-              className='w-full border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500'
+              className="w-full text-base sm:text-lg font-sans font-normal border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
             />
 
-            <br />
-
-            Message ✉️
+            <label className="block mt-5 mb-2">
+              Message ✉️
+            </label>
 
             <textarea
-              placeholder='Write Your Message...'
-              rows="3"
+              placeholder="Write Your Message..."
+              rows="4"
               value={message}
-              onChange={(e)=>{
+              onChange={(e) => {
                 setMessage(e.target.value)
               }}
-            
-              className='w-full border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500'
+              className="w-full text-base sm:text-lg font-sans font-normal border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
             />
 
             <button
               type="submit"
-              className='bg-blue-400 text-black text-2xl rounded-xl px-3 py-2 cursor-pointer hover:bg-blue-500'
+              className="w-full sm:w-auto mt-6 bg-blue-400 text-black text-lg sm:text-xl rounded-xl px-5 py-3 cursor-pointer hover:bg-blue-500 transition"
             >
               Send Message
             </button>
 
           </div>
+
         </div>
-    </form>
+
+      </form>
+
     </div>
   )
 }
