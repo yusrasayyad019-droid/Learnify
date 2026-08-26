@@ -45,7 +45,7 @@ const [signup, setSignup] = useState('')
       </span>
       <br />
       <form onSubmit={handleSubmit}>
-        <div className='sm:rounded-2xl flex flex-wrap shadow-2xl h-100 w-90  mb-500 border-4 bg-amber-50  md:-ml-100 h-150 w-100'>
+        <div className='sm:rounded-2xl flex flex-wrap shadow-2xl h-100 w-90  mb-500 border-4 bg-amber-50  md: ml-100 h-170 w-100'>
           <div className='text-4xl text-slate-700 font-serif font-bold ml-3 mt-5'>
            Full Name
              <textarea
